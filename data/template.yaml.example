@@ -1,0 +1,70 @@
+header:
+  name: "Candidate Name"
+  location: "City, Country"
+  contacts:
+    - text: "candidate@example.com"
+    - text: "tg: @candidate_handle"
+    - text: "+10000000000"
+    - text: "github.com/candidate-profile"
+      style: "link"
+
+summary:
+  title: "SUMMARY"
+  paragraphs:
+    - "Briefly describe your profile, strongest stack, and the type of roles you target."
+
+skills:
+  title: "SKILLS"
+  items:
+    - "AWS"
+    - "Docker"
+    - "Kubernetes"
+    - "Terraform"
+    - "Python"
+
+work_experience:
+  title: "WORK EXPERIENCE"
+  entries:
+    # Add more work entries as needed.
+    - company: "Company Name"
+      dates: "Jan 2024 - Present"
+      role: "DevOps Engineer"
+      location: "City, Country"
+      bullets:
+        # Add more bullets as needed.
+        - "Describe one measurable impact (reliability, cost, performance, delivery speed)."
+      gap_after: "0.25em"
+
+projects:
+  title: "PROJECTS"
+  entries:
+    # Add more projects as needed.
+    - name: "Project Name"
+      bullets:
+        # Add more bullets as needed.
+        - "Explain the problem, your implementation, and outcome."
+      gap_after: "0.20em"
+
+education:
+  title: "EDUCATION"
+  entries:
+    # Add more education entries as needed.
+    - institution: "University Name"
+      dates: "Sep 2020 - Jun 2024"
+      degree: "Bachelor's Degree in Computer Science"
+
+certifications:
+  title: "CERTIFICATIONS"
+  intro_gap: "0.81em"
+  items:
+    # Add more certifications as needed.
+    - "Certification Name"
+
+languages:
+  width: "1.18in"
+  font_size: "10.500"
+  line_height: "11.178"
+  line_gap_adjust: "-0.03em"
+  items:
+    # Add more languages as needed.
+    - "English - Professional"

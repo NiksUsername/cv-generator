@@ -1,0 +1,74 @@
+\usepackage[
+  paperwidth=595bp,
+  paperheight=842bp,
+  top=36.222bp,
+  bottom=36.324bp,
+  left=30bp,
+  right=30bp
+]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1.5em}
+
+\definecolor{cvlinkblue}{RGB}{18,85,204}
+\newcommand{\cvBody}{\fontsize{10.20}{14.80}\selectfont}
+
+\newcommand{\cvName}[1]{%
+  {\centering\fontsize{24}{26}\selectfont\textbf{#1}\par}%
+}
+
+\newcommand{\cvLocation}[1]{%
+  {\centering\cvBody #1\par}%
+}
+
+\newcommand{\cvContact}[1]{%
+  {\centering\cvBody #1\par}%
+}
+
+\newcommand{\cvSection}[1]{%
+  \vspace{0.66em}%
+  {\fontsize{11.96}{13.2}\selectfont\textbf{#1}\par}%
+  \vspace{0.14em}%
+  \hrule
+  \vspace{0.78em}%
+}
+
+\newcommand{\cvRole}[4]{%
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  {\cvBody\textbf{#1}} & {\cvBody\textbf{#2}} \\
+  {\cvBody #3} & {\cvBody\textit{#4}} \\
+  \end{tabular*}%
+}
+
+\newcommand{\cvRoleNoLocation}[3]{%
+  \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  {\cvBody\textbf{#1}} & {\cvBody\textbf{#2}} \\
+  {\cvBody #3} & \\
+  \end{tabular*}%
+}
+
+\newenvironment{cvBullets}{%
+  \begin{itemize}[label=\textbullet,leftmargin=1.40em,labelsep=0.25em,itemsep=0.30em,topsep=0.14em,parsep=0pt,partopsep=0pt]
+}{%
+  \end{itemize}
+}
+
+\newenvironment{cvWorkBullets}{%
+  \begin{itemize}[label=\textbullet,leftmargin=1.40em,labelsep=0.25em,itemsep=0.30em,topsep=0.00em,parsep=0pt,partopsep=0pt]
+}{%
+  \end{itemize}
+}
+
+\newcommand{\cvCertItem}[1]{%
+  {\cvBody\textbf{#1}}\par
+  \vspace{0.73em}%
+}
