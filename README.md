@@ -3,7 +3,7 @@
 This project renders a one-page LaTeX CV from YAML and includes a FastAPI service that:
 
 1. Accepts a job description and optional job listing URL.
-2. Uses Gemini (`gemini-2.5-flash`) to tailor CV text to the role.
+2. Uses Gemini (`gemini-2.5-flash`) and candidate.yaml info about the candidate, to tailor CV text to the role.
 3. Writes generated content into `data/cv.yaml`.
 4. Compiles and returns `main_modular.pdf`.
 
